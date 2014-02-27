@@ -26,7 +26,6 @@ chooseRadio = function (radioId) {
 
 disableTextbox = function (state) {
   emailAddress.disabled = state;
-  emailAddress.setAttribute('aria-disabled', state);
 };
 
 onChange = function (e) {
@@ -55,7 +54,6 @@ onClick = function (e) {
 };
 
 emailMethod.setAttribute("aria-controls", "email-address");
-emailAddress.setAttribute("aria-disabled", true);
 emailAddress.disabled = true;
 postMethod.addEventListener('change', onChange, false);
 emailMethod.addEventListener('change', onChange, false);

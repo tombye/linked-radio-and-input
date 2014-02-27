@@ -1,7 +1,22 @@
+body {
+  text-align: center;
+}
+
+main {
+  display: block;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 body,
 input {
   font-size: 19px;
   font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  margin: 1em 0;
 }
 
 label,
@@ -12,10 +27,12 @@ input[type='radio'] {
 }
 
 label {
+  background-color: #55A863;
+  color: white;
   float: left;
   clear: left;
   border: 1px solid #333;
-  padding: 1em;
+  padding: 0.75em;
   margin-bottom: 1em;
   cursor: pointer;
 }
@@ -25,10 +42,23 @@ input[type='radio'] {
 }
 
 input[type='text'] {
+  line-height: 1.5;
   float: left;
-  padding: 0.5em;
-  margin: 0.5em 1em;
+  padding: 0.75em;
+  margin: 0 1em;
   width: 20em;
+}
+
+#email-address[disabled]:-moz-placeholder {
+  color: #D8D5D5;
+}
+
+#email-address[disabled]:-ms-input-placeholder {
+  color: #D8D5D5;
+}
+
+#email-address[disabled]::-webkit-input-placeholder {
+  color: #D8D5D5;
 }
 
 .visuallyhidden {
@@ -38,9 +68,31 @@ input[type='text'] {
 
 form {
   overflow: hidden;
+  padding: 0 19px 19px;
   margin-bottom: 2em;
+  border: solid 1px #333;
+  box-sizing: border-box;
+  max-width: 638px;
+}
+
+h2,
+p {
+  padding: 0 19px;
 }
 
 h2 {
   clear: both;
+}
+
+form h2 {
+  padding: 0;
+}
+
+p {
+  max-width: 600px;
+}
+
+i {
+  font-style: normal;
+  font-family: Courier;
 }

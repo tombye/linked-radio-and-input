@@ -5,25 +5,27 @@
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css" />
   </head>
   <body>
-    <h1>Test page for linking a radio button to a textbox</h1>
-    <form action="" method="get">
-      <h2>Choose the method of reply</h2>
-      <label for="post-method">
-        <input type="radio" id="post-method" name="method" />By post
-      </label>
-      <label for="email-method">
-        <input type="radio" id="email-method" name="method" />By email
-      </label>
-      <label class="visuallyhidden" for="email-address">Email address</label>
-      <input type="text" id="email-address" name="email-address" placeholder="Enter your email" />
-    </form>
-    <h2>Some notes</h2>
-    <p>Changing the <i>disabled</i> attribute of the textbox seems to make it act as if disabled all the time. This stops you from being able to enter text.</p>
-    <p>If you set the value of the textbox to itself when focused, this allows you to enter text.</p>
-    <p>This is an old trick used to update a screenreader's cache of the page.</p>
-    <p>Screenreaders will cache a version of the page and this is what you interact with. If the page changes, the cache can become stale and out of sync with what is now on the page.</p>
-    <p>Screenreaders need to track the state of form elements to keep up with interactions. Every time their state changes, the cache is refreshed to keep up. Because of this, we can force the page cache to update by changing the value of one of the form elements.</p>
-    <p>See <a href="https://www.ssbbartgroup.com/blog/2013/04/08/how-windows-screen-readers-work-on-the-web/">This article</a> for details of the page cache.</p>
+    <main role="main">
+      <h1>Test page for linking a radio button to a textbox</h1>
+      <form action="" method="get">
+        <h2>Choose the method of reply</h2>
+        <label for="post-method">
+          <input type="radio" id="post-method" name="method" />By post
+        </label>
+        <label for="email-method">
+          <input type="radio" id="email-method" name="method" />By email
+        </label>
+        <label class="visuallyhidden" for="email-address">Email address</label>
+        <input type="text" id="email-address" name="email-address" placeholder="Enter your email" />
+      </form>
+      <h2>Some notes</h2>
+      <p>Changing the <i>disabled</i> attribute of the textbox seems to make it act as if disabled all the time. This stops you from being able to enter text.</p>
+      <p>If you set the value of the textbox to itself when focused, this allows you to enter text.</p>
+      <p>This is an old trick used to update a screenreader's cache of the page.</p>
+      <p>Screenreaders will cache a version of the page and this is what you interact with. If the page changes, the cache can become stale and out of sync with what is now on the page.</p>
+      <p>Screenreaders need to track the state of form elements to keep up with interactions. Every time their state changes, the cache is refreshed to keep up. Because of this, we can force the page cache to update by changing the value of one of the form elements.</p>
+      <p>See <a href="https://www.ssbbartgroup.com/blog/2013/04/08/how-windows-screen-readers-work-on-the-web/">This article</a> for details of the page cache.</p>
+    </main>
     <script type="text/javascript" src="assets/javascripts/main.js"></script>
   </body>
 </html>
