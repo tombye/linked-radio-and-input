@@ -1,0 +1,46 @@
+body,
+input {
+  font-size: 19px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+label,
+input[type='radio'] {
+  vertical-align: middle;
+  line-height: 1.5;
+  display: inline;
+}
+
+label {
+  float: left;
+  clear: left;
+  border: 1px solid #333;
+  padding: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  margin-right: 0.5em;
+}
+
+input[type='text'] {
+  float: left;
+  padding: 0.5em;
+  margin: 0.5em 1em;
+  width: 20em;
+}
+
+.visuallyhidden {
+  position: absolute;
+  left: -9999em;
+}
+
+form {
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+
+h2 {
+  clear: both;
+}
