@@ -18,12 +18,17 @@
         <label class="visuallyhidden" for="email-address">Email address</label>
         <input type="text" id="email-address" name="email-address" placeholder="Enter your email" />
       </form>
-      <h2>Some notes</h2>
+      <h2>Keyboard users</h2>
+      <p>Tabbing through the page and selecting the <i>'By post'</i> radio will disable the email address textbox. This removes it from the tab order which makes sense as you can see by its styling that it is disabled.</p>
+      <h2>Voiceover users</h3>
+      <p>The fact that the email address is disabled or not is explained when moving to the email address textbox, they are told it is <i>'dimmed'</i>.
+      <h2>Implementation issues</h2>
+      <h3>The problem</h3>
       <p>Changing the <i>disabled</i> attribute of the textbox seems to make it act as if disabled all the time. This stops you from being able to enter text.</p>
-      <p>If you set the value of the textbox to itself when focused, this allows you to enter text.</p>
-      <p>This is an old trick used to update a screenreader's cache of the page.</p>
+      <h3>The hack</h3>
       <p>Screenreaders will cache a version of the page and this is what you interact with. If the page changes, the cache can become stale and out of sync with what is now on the page.</p>
       <p>Screenreaders need to track the state of form elements to keep up with interactions. Every time their state changes, the cache is refreshed to keep up. Because of this, we can force the page cache to update by changing the value of one of the form elements.</p>
+      <p>If you set the value of the textbox to itself when focused, this will force a cache update which will tell the screenreader the input is no longer disabled and allow you to enter text.</p>
       <p>See <a href="https://www.ssbbartgroup.com/blog/2013/04/08/how-windows-screen-readers-work-on-the-web/">This article</a> for details of the page cache.</p>
     </main>
     <script type="text/javascript" src="assets/javascripts/main.js"></script>
